@@ -64,3 +64,13 @@ bintray {
         }
     }
 }
+
+sourceSets {
+    main {
+        java {
+            srcDirs += file("${projectDir}/src/main/java");
+            srcDirs += file("${projectDir}/src/main/grpc");
+        }
+    }
+}
+
